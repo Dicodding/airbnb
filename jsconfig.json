@@ -1,24 +1,21 @@
 {
     "compilerOptions": {
-      "target": "esnext",
-      "useDefineForClassFields": true,
+      "target": "es5",
       "module": "esnext",
-      "moduleResolution": "node",
-      "strict": true,
-      "jsx": "preserve",
-      "sourceMap": true,
-      "resolveJsonModule": true,
-      "isolatedModules": true,
-      "esModuleInterop": true,
-      "lib": ["esnext", "dom"],
-      "skipLibCheck": true,
       "baseUrl": "./",
+      "moduleResolution": "node",
       "paths": {
-        "@/*": ["src/*"],
-        "components*": ["src/components/*"],
-        "utils/*": ["src/utils/*"],
-      }
-    },
-    "include": ["src/**/*.js",  "src/**/*.jsx"],
-
+        "@/*": [
+          "src/*"
+        ]
+      },
+      "jsx": "preserve",
+      "lib": [
+        "esnext",
+        "dom",
+        "dom.iterable",
+        "scripthost"
+      ]
+    }
   }
+  
